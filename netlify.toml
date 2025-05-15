@@ -1,0 +1,11 @@
+[functions]
+directory = "netlify/functions"
+
+[dev]
+functions = "netlify/functions"
+port = 8888
+framework = "vite"
+
+[build]
+publish = "dist"
+command = "npm run build"
