@@ -13,6 +13,7 @@ function IngredientList(props){
                 <h2>Ingredients on hand:</h2>
                 <div className="section-ul-button-container">
                 <ul className="ingredients-list" aria-live="polite">{ingredientsListItems}</ul>
+                <button className="clear-ingredients" onClick={props.clearIngredients}> Clear Ingredients</button>
                 {props.ingredients.length>3 ?<div className="get-recipe-container">
                     <div>
                         <h3>Ready for a recipe?</h3>

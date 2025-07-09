@@ -31,6 +31,10 @@ function Main() {
         console.log(Response)
     }
 
+    function clearIngredients(){
+        setIngredients([])
+    }
+
     return (
         <main>
             <form action={addIngredient} className="add-ingredient-form">
@@ -39,7 +43,8 @@ function Main() {
             </form>
 
             {ingredients.length < 4 && <p style={{ color: "red", fontSize: "15px", textAlign: "center" }}>Add at least 4 ingredients!</p>}
-            {ingredients.length > 0 && <IngredientList ingredients={ingredients} getRecipe={getRecipe} />}
+            {ingredients.length > 0 && <IngredientList ingredients={ingredients} getRecipe={getRecipe} clearIngredients={clearIngredients} />}
+
             {isLoading && <p style={{ textAlign: "center", fontStyle: "italic" }}>🍳 Cooking up your recipe...</p>}
             {recipe && <Recipe ref={targetDivRef} recipe={recipe} />}
         </main>

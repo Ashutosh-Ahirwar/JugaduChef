@@ -83,6 +83,19 @@ ul.ingredients-list > li {
     line-height: 28px;
 }
 
+.clear-ingredients{
+  font-family: "Inter", sans-serif;
+  border-radius: 6px;
+  border: none;
+  background: #141413;
+  color: #fafaf8;
+  width: 150px;
+  height: 40px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
 .get-recipe-container {
     display: flex;
     justify-content: space-between;
